@@ -1,0 +1,2319 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Your super  ApplicationAPI",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "api/DeleteUserInBrone": {
+            "post": {
+                "tags": [
+                    "DesignerBrone"
+                ],
+                "summary": "DeleteUserInBrone",
+                "description": "DeleteUserInBrone",
+                "operationId": "DeleteUserInBrone",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "books_id": {
+                                        "type": "string",
+                                        "format": "books_id",
+                                        "example": "45"
+                                    },
+                                    "proizvoditel_id": {
+                                        "type": "string",
+                                        "format": "proizvoditel_id",
+                                        "example": "121"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/AddUserInBrone": {
+            "post": {
+                "tags": [
+                    "DesignerBrone"
+                ],
+                "summary": "AddUserInBrone",
+                "description": "AddUserInBrone",
+                "operationId": "AddUserInBrone",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "books_id": {
+                                        "type": "string",
+                                        "format": "books_id",
+                                        "example": "45"
+                                    },
+                                    "proizvoditel_id": {
+                                        "type": "string",
+                                        "format": "proizvoditel_id",
+                                        "example": "121"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/DesignerAddBook": {
+            "post": {
+                "tags": [
+                    "DesignerBrone"
+                ],
+                "summary": "DesignerAddBook",
+                "description": "DesignerAddBook",
+                "operationId": "DesignerAddBook",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "phone": {
+                                        "type": "string",
+                                        "format": "phone",
+                                        "example": "0930735884"
+                                    },
+                                    "name": {
+                                        "type": "string",
+                                        "format": "name",
+                                        "example": "asfd"
+                                    },
+                                    "dubl_phone": {
+                                        "type": "string",
+                                        "format": "phone",
+                                        "example": "98769846341"
+                                    },
+                                    "dubl_name": {
+                                        "type": "string",
+                                        "format": "phone",
+                                        "example": "sghdnlkjsan"
+                                    },
+                                    "city": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "erevan"
+                                    },
+                                    "category_id": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "1"
+                                    },
+                                    "category_name": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "Жилая мебель"
+                                    },
+                                    "proizvaditel_info[]": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "2^just code^10000"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetMyBrone": {
+            "get": {
+                "tags": [
+                    "DesignerBrone"
+                ],
+                "summary": "Get list of GetMyBrone",
+                "description": "Returns list of GetMyBrone",
+                "operationId": "GetMyBrone",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "api/BroneProizvoditel": {
+            "post": {
+                "tags": [
+                    "DesignerBrone"
+                ],
+                "summary": "BroneProizvoditel",
+                "description": "BroneProizvoditel",
+                "operationId": "BroneProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "books_id": {
+                                        "type": "string",
+                                        "format": "id",
+                                        "example": "1"
+                                    },
+                                    "proizvoditel_id": {
+                                        "type": "string",
+                                        "format": "id",
+                                        "example": "2"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/getProizvoditelmyBrone": {
+            "get": {
+                "tags": [
+                    "ProizvoditelBrone"
+                ],
+                "summary": "Get list of GetMyBrone",
+                "description": "Returns list of GetMyBrone",
+                "operationId": "getProizvoditelmyBrone",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/GetProizvoditelVoznograjdenia": {
+            "get": {
+                "tags": [
+                    "ProizvoditelBrone"
+                ],
+                "summary": "Get list of GetMyBrone",
+                "description": "Returns list of GetMyBrone",
+                "operationId": "GetProizvoditelVoznograjdenia",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "api/ProizvoditelUpdatestatus": {
+            "post": {
+                "tags": [
+                    "ProizvoditelBrone"
+                ],
+                "summary": "ProizvoditelUpdatestatus",
+                "description": "ProizvoditelUpdatestatus",
+                "operationId": "ProizvoditelUpdatestatus",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "order_id": {
+                                        "type": "string",
+                                        "format": "id",
+                                        "example": "1"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/getDizainerForProizvoditelData": {
+            "get": {
+                "tags": [
+                    "ProizvoditelBrone"
+                ],
+                "summary": "Get list of GetMyBrone",
+                "description": "Returns list of GetMyBrone",
+                "operationId": "getDizainerForProizvoditelData",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/getDizainerForProizvoditelDataFiltre/1 OR 2 OR 3 ... 10": {
+            "get": {
+                "tags": [
+                    "ProizvoditelBrone"
+                ],
+                "summary": "Get list of GetMyBroneFilter",
+                "description": "Returns list of GetMyBrone\n             1 = sortByDesc('brone_count'),\n             2 = sortBy('brone_count'),\n             3 = sortByDesc('brone_3_mounth')\n             4 = sortBy('brone_3_mounth')\n             5 = sortByDesc('order')\n             6 =   sortby('order')\n             7 = sortByDesc('orders_sum')\n             8 = sortby('orders_sum')\n             9 = sortByDesc('orders_avg')\n             10 = sortby('orders_avg')\n     ",
+                "operationId": "getDizainerForProizvoditelDataFiltre",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "api/CetegoryForBroneProizvoditel": {
+            "post": {
+                "tags": [
+                    "ProizvoditelBrone"
+                ],
+                "summary": "CetegoryForBroneProizvoditel",
+                "description": "CetegoryForBroneProizvoditel",
+                "operationId": "CetegoryForBroneProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "category_id": {
+                                        "type": "string",
+                                        "format": "id",
+                                        "example": "1"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/DizainerRegister": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "DizainerRegister",
+                "description": "DizainerRegister",
+                "operationId": "DizainerRegister",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "format": "name",
+                                        "example": "user"
+                                    },
+                                    "surname": {
+                                        "type": "string",
+                                        "format": "surname",
+                                        "example": "useryan"
+                                    },
+                                    "phone": {
+                                        "type": "string",
+                                        "format": "phone",
+                                        "example": "93457898"
+                                    },
+                                    "phone_code": {
+                                        "type": "string",
+                                        "format": "phone",
+                                        "example": "+374"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "111111"
+                                    },
+                                    "password_confirmation": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "111111"
+                                    },
+                                    "diplom_photo": {
+                                        "type": "file",
+                                        "format": "file",
+                                        "example": "photo.png"
+                                    },
+                                    "selfi_photo": {
+                                        "type": "file",
+                                        "format": "file",
+                                        "example": "photo.png"
+                                    },
+                                    "i_agree": {
+                                        "type": "string",
+                                        "format": "I_agree",
+                                        "example": "true"
+                                    },
+                                    "role_id": {
+                                        "type": "string",
+                                        "format": "role_id",
+                                        "example": "2"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/sendCallUser": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "sendCallUser",
+                "description": "sendCallUser",
+                "operationId": "sendCallUser",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "NULL": {
+                                        "type": "string",
+                                        "format": "NULL",
+                                        "example": "NULL"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/updateRegisterNumber": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "updateRegisterNumber",
+                "description": "updateRegisterNumber",
+                "operationId": "updateRegisterNumber",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "PhoneCode, phone"
+                                ],
+                                "properties": {
+                                    "PhoneCode": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "+374"
+                                    },
+                                    "phone": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "93789878"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/MyFavoritUser": {
+            "get": {
+                "tags": [
+                    "Favorit"
+                ],
+                "summary": "MyFavoritUser",
+                "description": "MyFavoritUser",
+                "operationId": "MyFavoritUser",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ]
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/addtoFavorit": {
+            "post": {
+                "tags": [
+                    "Favorit"
+                ],
+                "summary": "addtoFavorit",
+                "description": "addtoFavorit",
+                "operationId": "addtoFavorit",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "user_id": {
+                                        "type": "string",
+                                        "format": "id",
+                                        "example": "1"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/deleteFavoritProizvoditel": {
+            "post": {
+                "tags": [
+                    "Favorit"
+                ],
+                "summary": "deleteFavoritProizvoditel",
+                "description": "deleteFavoritProizvoditel",
+                "operationId": "deleteFavoritProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "user_id": {
+                                        "type": "string",
+                                        "format": "id",
+                                        "example": "1"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/sendcodeforphone": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "sendcodeforphone",
+                "description": "sendcodeforphone",
+                "operationId": "sendcodeforphone",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone_code": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "+374"
+                                    },
+                                    "phone": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "93073584"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/resetpasswordcode": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "resetpasswordcode",
+                "description": "resetpasswordcode",
+                "operationId": "resetpasswordcode",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone_code": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "+374"
+                                    },
+                                    "phone": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "93073584"
+                                    },
+                                    "forgot_password_code": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "7894"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/updatepasswordforgot": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "updatepasswordforgot",
+                "description": "updatepasswordforgot",
+                "operationId": "updatepasswordforgot",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone_code": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "+374"
+                                    },
+                                    "phone": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "93073584"
+                                    },
+                                    "forgot_password_code": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "7894"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "11111111"
+                                    },
+                                    "password_confirmation": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "11111111"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/loginuser": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "loginuser",
+                "description": "loginuser",
+                "operationId": "loginuser",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "login": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "+37493073584"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "11111111"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/UserLogout": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "UserLogout",
+                "description": "UserLogout",
+                "operationId": "UserLogout",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "null": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "null"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/getCityApi": {
+            "get": {
+                "tags": [
+                    "getCityApi"
+                ],
+                "summary": "Get list of city",
+                "description": "Returns list of projects",
+                "operationId": "getCityApi",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "/GetProductCategory": {
+            "get": {
+                "tags": [
+                    "GetProductCategory"
+                ],
+                "summary": "Get list of city",
+                "description": "Returns list of projects",
+                "operationId": "GetProductCategory",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "api/RegisterManufacturerUser": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "RegisterManufacturerUser",
+                "description": "RegisterManufacturerUser",
+                "operationId": "RegisterManufacturerUser",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "telegram": {
+                                        "type": "string",
+                                        "format": "telegram",
+                                        "example": "group_name"
+                                    },
+                                    "company_name": {
+                                        "type": "string",
+                                        "format": "name",
+                                        "example": "justcode"
+                                    },
+                                    "phone": {
+                                        "type": "string",
+                                        "format": "phone",
+                                        "example": "93457898"
+                                    },
+                                    "password": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "111111"
+                                    },
+                                    "password_confirmation": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "111111"
+                                    },
+                                    "individual_number": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "7896847654321"
+                                    },
+                                    "watsap_phone": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "+37493073584"
+                                    },
+                                    "i_agree": {
+                                        "type": "string",
+                                        "format": "I_agree",
+                                        "example": "true"
+                                    },
+                                    "role_id": {
+                                        "type": "string",
+                                        "format": "role_id",
+                                        "example": "3"
+                                    },
+                                    "made_in": {
+                                        "type": "string",
+                                        "format": "made_in",
+                                        "example": "Armenia"
+                                    },
+                                    "price_of_metr": {
+                                        "type": "string",
+                                        "format": "price_of_metr",
+                                        "example": "12"
+                                    },
+                                    "saite": {
+                                        "type": "string",
+                                        "format": "saite",
+                                        "example": "www.facebook.com"
+                                    },
+                                    "show_room": {
+                                        "type": "string",
+                                        "format": "show_room",
+                                        "example": "Да . нет. все"
+                                    },
+                                    "logo": {
+                                        "type": "file",
+                                        "format": "file",
+                                        "example": "photo.png"
+                                    },
+                                    "percent_bonus[]": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "10000^20000^9"
+                                    },
+                                    "sales_city[]": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "1^москва"
+                                    },
+                                    "product_category[]": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "1^зал"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/updateveryficode": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "updateveryficode",
+                "description": "updateveryficode",
+                "operationId": "updateveryficode",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "phone_veryfi_code": {
+                                        "type": "string",
+                                        "format": "text",
+                                        "example": "4587"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/createnewproductProizvoditel": {
+            "post": {
+                "tags": [
+                    "AuthProducts"
+                ],
+                "summary": "createnewproductProizvoditel",
+                "description": "createnewproductProizvoditel",
+                "operationId": "createnewproductProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "category_id": {
+                                        "type": "string",
+                                        "format": "name",
+                                        "example": "1"
+                                    },
+                                    "category_name": {
+                                        "type": "string",
+                                        "format": "phone",
+                                        "example": "Жилая мебель"
+                                    },
+                                    "name": {
+                                        "type": "string",
+                                        "format": "phone",
+                                        "example": "Furnitur"
+                                    },
+                                    "frame": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "Корпус"
+                                    },
+                                    "facades": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "Фасады"
+                                    },
+                                    "length": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "12"
+                                    },
+                                    "height": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "12"
+                                    },
+                                    "price": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "10000"
+                                    },
+                                    "tabletop": {
+                                        "type": "string",
+                                        "format": "password",
+                                        "example": "Столешница"
+                                    },
+                                    "photo[]": {
+                                        "type": "string",
+                                        "format": "string",
+                                        "example": "photo"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetAllProduct": {
+            "get": {
+                "tags": [
+                    "AuthProducts"
+                ],
+                "summary": "Get all products paginate 10",
+                "description": "Returns list of projects",
+                "operationId": "GetAllProduct",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "api/deleteAuthUserProduct": {
+            "post": {
+                "tags": [
+                    "AuthProducts"
+                ],
+                "summary": "deleteAuthUserProduct",
+                "description": "deleteAuthUserProduct",
+                "operationId": "deleteAuthUserProduct",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "product_id[]": {
+                                        "type": "string",
+                                        "format": "name",
+                                        "example": "1"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/GetAllProductOneUser": {
+            "get": {
+                "tags": [
+                    "Products"
+                ],
+                "summary": "Get All ProductO ne User paginate 10",
+                "description": "Returns list of projects",
+                "operationId": "GetAllProductOneUser",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "api/GetcategoryOneuserprduct": {
+            "post": {
+                "tags": [
+                    "Products"
+                ],
+                "summary": "GetcategoryOneuserprduct",
+                "description": "GetcategoryOneuserprduct",
+                "operationId": "GetcategoryOneuserprduct",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "category_name": {
+                                        "type": "string",
+                                        "format": "name",
+                                        "example": "Кухни"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/getOneProizvoditel/user_id{id}": {
+            "get": {
+                "tags": [
+                    "Products"
+                ],
+                "summary": "Get All ProductO one User ",
+                "description": "Returns list of projects",
+                "operationId": "getOneProizvoditel",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                }
+            }
+        },
+        "api/filtergetOneProizvoditel": {
+            "post": {
+                "tags": [
+                    "Products"
+                ],
+                "summary": "filtergetOneProizvoditel",
+                "description": "filtergetOneProizvoditel",
+                "operationId": "filtergetOneProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "category_name": {
+                                        "type": "string",
+                                        "format": "name",
+                                        "example": "Кухни"
+                                    },
+                                    "user_id": {
+                                        "type": "string",
+                                        "format": "name",
+                                        "example": "2"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/searchProizvoditel": {
+            "post": {
+                "tags": [
+                    "Search"
+                ],
+                "summary": "searchProizvoditel",
+                "description": "searchProizvoditel",
+                "operationId": "searchProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "company_name": {
+                                        "type": "string",
+                                        "format": "name",
+                                        "example": "Lait Kuxni"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/filterProizvoditel": {
+            "post": {
+                "tags": [
+                    "Search"
+                ],
+                "summary": "filterProizvoditel",
+                "description": "filterProizvoditel",
+                "operationId": "filterProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "meshok": {
+                                        "type": "string",
+                                        "format": "meshok",
+                                        "example": "1 OR 2 OR 3 OR 4"
+                                    },
+                                    "category_name": {
+                                        "type": "string",
+                                        "format": "name",
+                                        "example": "kuxni"
+                                    },
+                                    "city_name": {
+                                        "type": "string",
+                                        "format": "name",
+                                        "example": "Moskva^sankt peterburg"
+                                    },
+                                    "made_in": {
+                                        "type": "string",
+                                        "format": "name",
+                                        "example": "Russia"
+                                    },
+                                    "show_room": {
+                                        "type": "string",
+                                        "format": "name",
+                                        "example": "Да, Нет"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/updateProfileCompanyName": {
+            "post": {
+                "tags": [
+                    "UpdateProfileProizvaditel"
+                ],
+                "summary": "updateProfileCompanyName",
+                "description": "updateProfileCompanyName",
+                "operationId": "updateProfileCompanyName",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "company_name": {
+                                        "type": "string",
+                                        "format": "name",
+                                        "example": "justCOde"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/updateLogoProizvoditel": {
+            "post": {
+                "tags": [
+                    "UpdateProfileProizvaditel"
+                ],
+                "summary": "updateLogoProizvoditel",
+                "description": "updateLogoProizvoditel",
+                "operationId": "updateLogoProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "logo": {
+                                        "type": "file",
+                                        "format": "file",
+                                        "example": "photo.png"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/UpdateWatsapProizvoditel": {
+            "post": {
+                "tags": [
+                    "UpdateProfileProizvaditel"
+                ],
+                "summary": "UpdateWatsapProizvoditel",
+                "description": "UpdateWatsapProizvoditel",
+                "operationId": "UpdateWatsapProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "watsap_phone": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "+37493073584"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/updateSaiteProizvaditel": {
+            "post": {
+                "tags": [
+                    "UpdateProfileProizvaditel"
+                ],
+                "summary": "updateSaiteProizvaditel",
+                "description": "updateSaiteProizvaditel",
+                "operationId": "updateSaiteProizvaditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "saite": {
+                                        "type": "url",
+                                        "format": "url",
+                                        "example": "www.google.com"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/updateManeInProizvoditel": {
+            "post": {
+                "tags": [
+                    "UpdateProfileProizvaditel"
+                ],
+                "summary": "updateManeInProizvoditel",
+                "description": "updateManeInProizvoditel",
+                "operationId": "updateManeInProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "made_in": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "Armenia"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/UpdateTelegramChanel": {
+            "post": {
+                "tags": [
+                    "UpdateProfileProizvaditel"
+                ],
+                "summary": "UpdateTelegramChanel",
+                "description": "UpdateTelegramChanel",
+                "operationId": "UpdateTelegramChanel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "telegram": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "telegramchanel"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/UpdateIndividualNumberProizvoditel": {
+            "post": {
+                "tags": [
+                    "UpdateProfileProizvaditel"
+                ],
+                "summary": "UpdateIndividualNumberProizvoditel",
+                "description": "UpdateIndividualNumberProizvoditel",
+                "operationId": "UpdateIndividualNumberProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "individual_number": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "4567898132"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/ValidateOldNumberProizvoditel": {
+            "post": {
+                "tags": [
+                    "UpdateProfileProizvaditel"
+                ],
+                "summary": "ValidateOldNumberProizvoditel",
+                "description": "ValidateOldNumberProizvoditel",
+                "operationId": "ValidateOldNumberProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "phone_code": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "+374"
+                                    },
+                                    "phone": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "93073584"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/newnumberProizvoditel": {
+            "post": {
+                "tags": [
+                    "UpdateProfileProizvaditel"
+                ],
+                "summary": "newnumberProizvoditel",
+                "description": "newnumberProizvoditel",
+                "operationId": "newnumberProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "phone_code": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "+374"
+                                    },
+                                    "phone": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "93073584"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/updatePhoneNumberProizvoditel": {
+            "post": {
+                "tags": [
+                    "UpdateProfileProizvaditel"
+                ],
+                "summary": "updatePhoneNumberProizvoditel",
+                "description": "updatePhoneNumberProizvoditel",
+                "operationId": "updatePhoneNumberProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "code": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "7374"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/updatePasswordUser": {
+            "post": {
+                "tags": [
+                    "updatePasswordUser"
+                ],
+                "summary": "updatePasswordUser",
+                "description": "updatePasswordUser",
+                "operationId": "updatePasswordUser",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "old_password": {
+                                        "type": "text",
+                                        "format": "password",
+                                        "example": "111111"
+                                    },
+                                    "password": {
+                                        "type": "text",
+                                        "format": "password",
+                                        "example": "111111"
+                                    },
+                                    "password_confirmation": {
+                                        "type": "text",
+                                        "format": "password",
+                                        "example": "111111"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/UpdategorodaProdaji": {
+            "post": {
+                "tags": [
+                    "UpdateProfileProizvaditel"
+                ],
+                "summary": "UpdategorodaProdaji",
+                "description": "UpdategorodaProdaji",
+                "operationId": "UpdategorodaProdaji",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "sales_city[]": {
+                                        "type": "text",
+                                        "format": "password",
+                                        "example": "1^Москва"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/UpdateCategoryProizvoditel": {
+            "post": {
+                "tags": [
+                    "UpdateProfileProizvaditel"
+                ],
+                "summary": "UpdateCategoryProizvoditel",
+                "description": "UpdateCategoryProizvoditel",
+                "operationId": "UpdateCategoryProizvoditel",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "product_category[]": {
+                                        "type": "text",
+                                        "format": "password",
+                                        "example": "1^Жилая мебель"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/UpdatePracentForDesigner": {
+            "post": {
+                "tags": [
+                    "UpdateProfileProizvaditel"
+                ],
+                "summary": "UpdatePracentForDesigner",
+                "description": "UpdatePracentForDesigner",
+                "operationId": "UpdatePracentForDesigner",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "percent_bonus[]": {
+                                        "type": "text",
+                                        "format": "password",
+                                        "example": "0^10000^10"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/ValidateOldNumberDesigner": {
+            "post": {
+                "tags": [
+                    "UpdateProfileDesigner"
+                ],
+                "summary": "ValidateOldNumberDesigner",
+                "description": "ValidateOldNumberDesigner",
+                "operationId": "ValidateOldNumberDesigner",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "phone_code": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "+374"
+                                    },
+                                    "phone": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "93073584"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/newnumberDesigner": {
+            "post": {
+                "tags": [
+                    "UpdateProfileDesigner"
+                ],
+                "summary": "newnumberDesigner",
+                "description": "newnumberDesigner",
+                "operationId": "newnumberDesigner",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "phone_code": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "+374"
+                                    },
+                                    "phone": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "93073584"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/updatePhoneNumberDesigner": {
+            "post": {
+                "tags": [
+                    "UpdateProfileDesigner"
+                ],
+                "summary": "updatePhoneNumberDesigner",
+                "description": "updatePhoneNumberDesigner",
+                "operationId": "updatePhoneNumberDesigner",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "code": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "7374"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/UpdateProfileNameSurnameDesigner": {
+            "post": {
+                "tags": [
+                    "UpdateProfileDesigner"
+                ],
+                "summary": "UpdateProfileNameSurnameDesigner",
+                "description": "UpdateProfileNameSurnameDesigner",
+                "operationId": "UpdateProfileNameSurnameDesigner",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "name": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "user"
+                                    },
+                                    "surname": {
+                                        "type": "text",
+                                        "format": "text",
+                                        "example": "useryan"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "api/UpdateProfileDiplomDesigner": {
+            "post": {
+                "tags": [
+                    "UpdateProfileDesigner"
+                ],
+                "summary": "UpdateProfileDiplomDesigner",
+                "description": "UpdateProfileDiplomDesigner",
+                "operationId": "UpdateProfileDiplomDesigner",
+                "requestBody": {
+                    "description": "Pass user credentials",
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "required": [
+                                    "NULL"
+                                ],
+                                "properties": {
+                                    "diplom_photo": {
+                                        "type": "file",
+                                        "format": "text",
+                                        "example": "photo.png"
+                                    }
+                                },
+                                "type": "object"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Wrong credentials response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
